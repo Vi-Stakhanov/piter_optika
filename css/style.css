@@ -409,6 +409,10 @@ button:focus{
     z-index: 8;
 }
 
+.header .container{
+    position: static;
+}
+
 .header__top{
     padding-top: 24px;
     padding-bottom: 24px;
@@ -2888,6 +2892,21 @@ ol li{
 .decorated .text a{
     color: #5691F5;
     text-decoration: underline;
+}
+
+/**INTER**/
+.inter{
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.inter__title{
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #0e1829;
 }
 
 /**FOOTER**/
