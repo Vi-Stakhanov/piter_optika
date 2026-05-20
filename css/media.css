@@ -767,6 +767,7 @@
     .quantity{
         width: 70px;
         height: 24px;
+        margin-top: 0;
     }
 
     .quantity input{
