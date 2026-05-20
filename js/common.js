@@ -62,8 +62,19 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
+    $('.btn-search-mob').click(function(){
+        $(this).toggleClass('active');
+        $('.search-mob').slideToggle();
+    });
+
     $('.btn-fav').click(function() {
         $(this).toggleClass('active');
+    });
+
+    $('.enroll__open').click(function() {
+        $('.enroll__full').slideToggle();
+        $(this).hide();
+        $('.enroll__hide').fadeIn();
     });
 
 	$('.intro-slider-1').slick({
@@ -184,6 +195,238 @@ $(document).ready(function() {
             } 
         ]
     });
+
+    // ------------------- НАСТРОЙКИ -------------------
+        // Месяца на русском (для заголовка)
+        const monthNamesRu = [
+            'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+        ];
+
+        // Текущий отображаемый год и месяц (0-11)
+        let currentYear = 2026;
+        let currentMonth = 4;      // 4 = Май (0-индекс)
+        
+        // Выбранная дата (объект Date, храним только год/месяц/число)
+        let selectedDate = new Date(2026, 4, 19);   // 19 мая 2026 (по умолчанию из примера)
+        
+        // Обновить текстовое отображение выбранной даты внизу
+        function updateSelectedDateDisplay() {
+            if (!selectedDate) {
+                $('#selectedDateDisplay').text('—');
+                return;
+            }
+            const day = selectedDate.getDate();
+            const month = monthNamesRu[selectedDate.getMonth()];
+            const year = selectedDate.getFullYear();
+            $('#selectedDateDisplay').text(`${day} ${month} ${year}`);
+        }
+        
+        // Получить количество дней в месяце
+        function getDaysInMonth(year, month) {
+            return new Date(year, month + 1, 0).getDate();
+        }
+        
+        // Рендер календаря на основе currentYear/currentMonth и подсветка selectedDate
+        function renderCalendar() {
+            // 1. Обновляем заголовок
+            $('.calendar .month').text(`${monthNamesRu[currentMonth]} ${currentYear}`);
+            
+            // 2. Определяем параметры для построения сетки
+            const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+            // Первый день недели: в JS 0 = воскресенье, нам нужно ПН = 0 (индекс для строк)
+            // Вычисляем смещение: для ПН нужно, чтобы воскресенье было последним (индекс 6)
+            let startOffset = firstDayOfMonth.getDay(); // 0 вс, 1 пн, 2 вт...6 сб
+            // Преобразуем: если воскресенье (0) -> ставим индекс 6 (воскресенье в конце)
+            // Для пн(1) -> 0, вт(2) -> 1, ср(3)->2, чт(4)->3, пт(5)->4, сб(6)->5, вс(0)->6
+            let offsetIndex = (startOffset === 0) ? 6 : startOffset - 1;
+            
+            const totalDaysCurrent = getDaysInMonth(currentYear, currentMonth);
+            
+            // Предыдущий месяц (для заполнения пустых ячеек)
+            let prevMonthYear = currentYear;
+            let prevMonth = currentMonth - 1;
+            if (prevMonth < 0) {
+                prevMonth = 11;
+                prevMonthYear = currentYear - 1;
+            }
+            const daysInPrevMonth = getDaysInMonth(prevMonthYear, prevMonth);
+            
+            // Следующий месяц (для хвостовых ячеек)
+            let nextMonthYear = currentYear;
+            let nextMonth = currentMonth + 1;
+            if (nextMonth > 11) {
+                nextMonth = 0;
+                nextMonthYear = currentYear + 1;
+            }
+            
+            // Генерируем массив ячеек: 6 строк * 7 = 42 ячейки
+            const totalCells = 42;
+            let daysArray = [];
+            
+            // Заполняем предыдущим месяцем (ячейки с class="no")
+            for (let i = 0; i < offsetIndex; i++) {
+                const prevDayNum = daysInPrevMonth - offsetIndex + i + 1;
+                daysArray.push({
+                    type: 'prev',
+                    day: prevDayNum,
+                    year: prevMonthYear,
+                    month: prevMonth,
+                    isCurrentMonth: false
+                });
+            }
+            
+            // Заполняем текущий месяц
+            for (let d = 1; d <= totalDaysCurrent; d++) {
+                daysArray.push({
+                    type: 'current',
+                    day: d,
+                    year: currentYear,
+                    month: currentMonth,
+                    isCurrentMonth: true
+                });
+            }
+            
+            // Заполняем следующий месяц до 42 ячеек
+            const remaining = totalCells - daysArray.length;
+            for (let i = 1; i <= remaining; i++) {
+                daysArray.push({
+                    type: 'next',
+                    day: i,
+                    year: nextMonthYear,
+                    month: nextMonth,
+                    isCurrentMonth: false
+                });
+            }
+            
+            // 3. Очищаем контейнер .days и строим rows
+            const $daysContainer = $('.days');
+            $daysContainer.empty();
+            
+            // Строим ряды по 7 элементов
+            for (let row = 0; row < 6; row++) {
+                const $row = $('<div>').addClass('row');
+                for (let col = 0; col < 7; col++) {
+                    const cellData = daysArray[row * 7 + col];
+                    if (!cellData) continue;
+                    
+                    const $cell = $('<div>');
+                    const $span = $('<span>').text(cellData.day);
+                    $cell.append($span);
+                    
+                    // Добавляем класс .no для дней предыдущего/следующего месяца
+                    if (!cellData.isCurrentMonth) {
+                        $cell.addClass('no');
+                    } else {
+                        // Для текущего месяца проставляем data-атрибуты (для выбора даты)
+                        $cell.attr('data-year', cellData.year);
+                        $cell.attr('data-month', cellData.month);
+                        $cell.attr('data-day', cellData.day);
+                    }
+                    
+                    // Подсветка активной даты (если выбрана и совпадает с текущей ячейкой)
+                    if (selectedDate && cellData.isCurrentMonth &&
+                        cellData.year === selectedDate.getFullYear() &&
+                        cellData.month === selectedDate.getMonth() &&
+                        cellData.day === selectedDate.getDate()) {
+                        $cell.addClass('active');
+                    }
+                    
+                    $row.append($cell);
+                }
+                $daysContainer.append($row);
+            }
+            
+            // обновим текстовый блок выбранной даты
+            updateSelectedDateDisplay();
+        }
+        
+        // Изменить месяц (направление: +1 = следующий, -1 = предыдущий)
+        function changeMonth(delta) {
+            let newMonth = currentMonth + delta;
+            let newYear = currentYear;
+            if (newMonth < 0) {
+                newMonth = 11;
+                newYear--;
+            } else if (newMonth > 11) {
+                newMonth = 0;
+                newYear++;
+            }
+            currentMonth = newMonth;
+            currentYear = newYear;
+            renderCalendar();   // перерисовка с выбранной датой (selectedDate остаётся прежней)
+        }
+        
+        // Выбор даты (клик по дню текущего месяца)
+        function handleDateSelection($targetCell) {
+            // Проверяем: если у ячейки есть класс .no — игнорируем (неактивный день)
+            if ($targetCell.hasClass('no')) return;
+            
+            // Получаем данные о дате из атрибутов
+            const year = parseInt($targetCell.attr('data-year'));
+            const month = parseInt($targetCell.attr('data-month'));
+            const day = parseInt($targetCell.attr('data-day'));
+            
+            if (isNaN(year) || isNaN(month) || isNaN(day)) return;
+            
+            // Создаём новую выбранную дату (локальное время, без смещения)
+            const newSelected = new Date(year, month, day);
+            selectedDate = newSelected;
+            
+            // Обновить активный класс в календаре
+            $('.days .row div').removeClass('active');
+            $targetCell.addClass('active');
+            
+            // Обновить отображение выбранной даты внизу
+            updateSelectedDateDisplay();
+        }
+        
+        // ---------- ИНИЦИАЛИЗАЦИЯ И СОБЫТИЯ ----------
+        
+        // Первая отрисовка (май 2026)
+        renderCalendar();
+        
+        // Стрелка "назад" (prev)
+        $('.calendar .prev').on('click', function() {
+            changeMonth(-1);
+        });
+        
+        // Стрелка "вперед" (next)
+        $('.calendar .next').on('click', function() {
+            changeMonth(1);
+        });
+        
+        // Делегирование события клика по дням (динамические элементы)
+        $('.days').on('click', '.row div', function(e) {
+            const $this = $(this);
+            // Если день неактивен (no) – не выбираем
+            if ($this.hasClass('no')) return;
+            handleDateSelection($this);
+        });
+        
+        // Дополнительно: если необходимо программно обновить, можно также при ресайзе ничего не делать.
+        // Синхронизация отображения выбранной даты при загрузке уже есть.
+        
+        // (опционально) при клике на уже активную дату ничего не сломается
+        // добавим также hover для активной даты без конфликта (CSS уже)
+        
+        // Для удобства: если выбранная дата изначально соответствует маю 2026, 
+        // и если пользователь переключает месяцы — актив сохраняется там, где день совпадает, 
+        // но если числа нет в новом месяце, то актив не показывается (т.к. ячейка .no или не совпадает)
+        // Это ожидаемое поведение, так как выбрана дата 19 мая 2026. При переключении на июнь,
+        // актив пропадает (нет 19 июня в выбранной дате?). Но selectedDate неизменна. 
+        // Если нужен автосброс? По заданию просто выбор даты + листание. Всё корректно.
+        // Также можно дополнительно обработать "текущая дата" — но не требуется, оставляем чистый датапикер.
+        
+        // Если при переключении месяца пользователь захочет выбрать другой день, 
+        // selectedDate изменится и будет отображаться в новом месяце.
+        
+        // Добавим небольшой эффект для лучшего UX: синхронизация при инициализации,
+        // а также при перелистывании месяцев, если выбранная дата существует в текущем отображаемом месяце -
+        // актив подсветится автоматически из-за условия в renderCalendar()
+        
+        // Покажем console.log для отладки (убрать можно)
+       
 
     
           

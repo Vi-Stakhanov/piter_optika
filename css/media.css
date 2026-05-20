@@ -884,6 +884,164 @@
     	font-size: 12px;
     }
 
+    .inter{
+        max-width: none;
+        padding: 30px 10px 55px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        background: #fff;
+        margin: 0 -10px;
+    }
+
+    .inter__top{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .inter__title{
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .inter__text{
+        margin-bottom: 18px;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .personal-chisel{
+        padding: 16px;
+    }
+
+    .personal-chisel .title{
+        font-size: 16px;
+    }
+
+    .personal-chisel .title span{
+        font-size: 12px;
+    }
+
+    .personal-chisel{
+        margin-bottom: 30px;
+    }
+
+    .personal .item{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .personal .item .title{
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .personal .item ul li{
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .personal-goods .pic{
+        width: 100px;
+        height: 50px;
+    }
+
+    .personal-goods__title{
+        font-size: 12px;
+    }
+
+    .edit .col.w25{
+        width: 50%;
+    }
+
+    .edit__item{
+        margin-bottom: 24px;
+    }
+
+    .enroll__text span{
+        font-size: 12px;
+    }
+
+    .enroll__top{
+        padding-bottom: 24px ;
+    }
+
+    .enroll__item{
+        padding: 20px;
+    }
+
+    .enroll__item .tit{
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .check label{
+        font-size: 12px;
+    }
+
+    .store-search .flex{
+        display: block;
+    }
+
+    .store-search__btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .store-drop{
+        padding-top: 18px;
+    }
+
+    .calendar{
+        margin-bottom: 18px;
+    }
+
+    .calendar{
+        padding: 15px;
+        border-radius: 13px;
+    }
+
+    .check-time__item{
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .check-time__item label span{
+        min-height: 40px;
+        padding: 3px 20px;
+        font-size: 12px;
+    }
+
+    .calendar__head{
+        margin-bottom: 20px;
+    }
+
+    .calendar .month{
+        font-size: 12px;
+    }
+
+    .week{
+        padding-bottom: 0px;
+    }
+
+    .week div{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .days .row{
+        margin-bottom: 10px;
+    }
+
+    .days .row div{
+        font-size: 12px;
+    }
+
+    .days .row div{
+        width: 30px;
+        height: 30px;
+    }
+
 }/**1199px**/
 
 @media only screen and (max-width : 992px){
