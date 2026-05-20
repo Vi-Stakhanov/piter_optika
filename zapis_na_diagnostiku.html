@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>zapis_na_diagnostiku</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    
+    <!-- HEADER
+    ================================= -->
+    <div class="header">
+        <div class="header__mob show1200">
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <div class="items">
+                            <div class="item">
+                                <div class="burger"></div>
+                            </div>
+                            <div class="item">
+                                <div class="btn-search-mob"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="logo-mob">
+                            <a href="">
+                                <img src="img/header/logo_mob.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="items">
+                            <div class="item">
+                                <a href="" class="fav-link"></a>
+                            </div>
+                            <div class="item">
+                                <a href="" class="cart-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__top hidd1200">
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <div class="logo">
+                            <a href="">
+                                <img src="img/header/logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="header__text">58 салонов по Санкт-Петербургу</div>
+                    </div>
+                    <div class="col">
+                        <div class="header__items">
+                            <div class="header__item">
+                                <div class="header__phone">
+                                    <a href="">8 (800) 600-72-80</a>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <div class="header__time">без выходных с 9:00 до 21:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle hidd1200">
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="">каталог <i></i></a>
+                                    <div class="nav__drop">
+                                        <div class="container">
+                                            <ul>
+                                                <li><a href="">Солнцезащитные очки <i></i></a></li>
+                                                <li><a href="">Оправы <i></i></a>
+                                                    <ul>
+                                                        <li><a href="">Посмотреть все товары</a></li>
+                                                        <li><a href="">По брендам <i></i></a></li>
+                                                        <li class="subtitle">Формы оправ:</li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_1.svg"></span>Авиаторы</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_2.svg"></span>Большие</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_3.svg"></span>Броулайнеры</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_4.svg"></span>Вэйферер</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_5.svg"></span>Квадратные</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_6.svg"></span>Клипоны</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_7.svg"></span>Кошачий глаз</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_8.svg"></span>Круглые</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_9.svg"></span>Овальные</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_10.svg"></span>Прямоугольные</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_11.svg"></span>Спортивные</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_12.svg"></span>Узкие</a></li>
+                                                        <li class="subtitle">типы оправ:</li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_13.svg"></span>Ободковые</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_14.svg"></span>Безободковые</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_15.svg"></span>полуободковые</a></li>
+                                                        <li class="subtitle">Пол:</li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_16.svg"></span>Мужские</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_17.svg"></span>Женские</a></li>
+                                                        <li><a href=""><span class="icon"><img src="img/menu/i_18.svg"></span>Детские</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="">Линзы для очков</a></li>
+                                                <li><a href="">Контактные линзы</a></li>
+                                                <li><a href="">Аксессуары</a></li>
+                                                <li><a href="">По брендам</a></li>
+                                                <li><a href="">Услуги</a></li>
+                                                <li><a href="">Подарочные карты</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>                                
+                                <li><a href="">бренды</a></li>
+                                <li><a href="">акции</a></li>
+                                <li><a href="">наши салоны</a></li>
+                                <li><a href="">блог</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="search">
+                            <form>
+                                <input type="text" name="" placeholder="поиск 50 000+ моделей">
+                                <button class="btn btn-lup"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="header-panel">
+                            <div class="header-panel__item">
+                                <a href="" class="fav-link"></a>
+                            </div>
+                            <div class="header-panel__item">
+                                <a href="" class="cart-link"></a>
+                            </div>
+                            <div class="header-panel__item">
+                                <a href="" class="user-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom hidd1200">
+            <div class="container">
+                <div class="nav nav-2 white">
+                    <ul>
+                        <li><a href="">ОПРАВЫ</a></li>
+                        <li><a href="">Солнцезащитные очки</a></li>
+                        <li><a href="">
+                            <img src="img/header/brand_1.svg" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="img/header/brand_2.svg" alt="">
+                        </a></li>
+                        <li><a href="">контактные линзы</a></li>
+                        <li><a href="">аксессуары</a></li>
+                        <li><a href="">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mob">
+            <div class="nav-mob">
+                <div class="nav-mob__level-1">
+                    <ul>
+                        <li><a href="" class="open-1" data-openid_1="level-2_1">каталог <i></i></a></li>
+                        <li><a href="">Бренды</a></li>
+                        <li class="active"><a href="">акции</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Наши салоны</a></li>
+                        <li><a href="">блог</a></li>                        
+                    </ul>
+                </div>
+                <div class="nav-mob__level-2" id="level-2_1">
+                    <div class="level-back level-back-1"><i></i> каталог</div>
+                    <ul>                        
+                        <li><a href="">Солнцезащитные очки <i></i></a></li>
+                        <li><a href="" class="open-2" data-openid_2="level-3_1">Оправы <i></i></a></li>
+                        <li><a href="">Линзы для очков</a></li>
+                        <li><a href="">Контактные линзы</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                        <li><a href="">По брендам</a></li>
+                        <li><a href="">Скидки</a></li>
+                        <li><a href="">Подарочные карты</a></li>
+                    </ul>
+                </div>
+                <div class="nav-mob__level-3" id="level-3_1">
+                    <div class="level-back level-back-2"><i></i> оправы</div>
+                    <ul>
+                        <li><a href="">Посмотреть все товары</a></li>
+                        <li><a href="">По брендам <i></i></a></li>
+                        <li class="subtitle">Формы оправ:</li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_1.svg"></span>Авиаторы</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_2.svg"></span>Большие</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_3.svg"></span>Броулайнеры</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_4.svg"></span>Вэйферер</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_5.svg"></span>Квадратные</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_6.svg"></span>Клипоны</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_7.svg"></span>Кошачий глаз</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_8.svg"></span>Круглые</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_9.svg"></span>Овальные</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_10.svg"></span>Прямоугольные</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_11.svg"></span>Спортивные</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_12.svg"></span>Узкие</a></li>
+                        <li class="subtitle">типы оправ:</li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_13.svg"></span>Ободковые</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_14.svg"></span>Безободковые</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_15.svg"></span>полуободковые</a></li>
+                        <li class="subtitle">Пол:</li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_16.svg"></span>Мужские</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_17.svg"></span>Женские</a></li>
+                        <li><a href=""><span class="icon"><img src="img/menu/i_18.svg"></span>Детские</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="nav-mob nav-mob-2">
+                    <ul>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Гарантия</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT
+    ================================= -->
+    <div class="content">
+        <div class="back-mob">
+            <a href=""><i></i> главная</a>
+        </div>
+        <div class="content__top hidd1200">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="">главная</a></li>
+                        <li>запись на диагностику</li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+        <div class="content__section">
+            <div class="container">
+                <h1 class="title-block">Запись на диагностику</h1>
+                <div class="enroll">
+                    <div class="enroll__top">
+                        <div class="enroll__text"><span>Чтобы бесплатно проверить зрение, воспользуйтесь простой пошаговой формой ниже*</span> *Диагностический сервис совершенно бесплатно предоставляется всем желающим в возрасте от 18 лет по обязательной предварительной записи.</div>
+                    </div>
+                    <div class="enroll__items">
+                        <div class="enroll__item">
+                            <div class="tit">Выберите услугу:</div>
+                            <div class="check"><label>        
+                                <input type="radio" name="1" checked=""><i></i><span>Проверка зрения с подбором очков</span></label>          
+                            </div>
+                            <div class="check"><label>        
+                                <input type="radio" name="1" ><i></i><span>Проверка зрения с подбором контактных линз</span></label>          
+                            </div>
+                        </div>
+                        <div class="enroll__item">
+                            <div class="tit">Выберите салон:</div>
+                            <div class="enroll__full">
+                                <div class="store">
+                                    <div class="store-search">
+                                        <div class="flex">
+                                            <div class="left">
+                                                <div class="btn btn-lup"></div>
+                                                <input type="text" name="" placeholder="">
+                                            </div>
+                                            <a href="#popup-map" data-fancybox data-options='{"touch" : false}' class="btn btn-blue store-search__btn"><i class="i-map"></i> смотреть на карте</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-drop">
+                                        <div class="store-drop__item">
+                                            <div class="check"><label>        
+                                                <input type="radio" name="point" checked=""><i></i><span>ул. Романовская, д. 1/31 (ТРК Небо) (Метро Девяткино)</span></label>    
+                                            </div>
+                                        </div>
+                                        <div class="store-drop__item">
+                                            <div class="check"><label>        
+                                                <input type="radio" name="point"><i></i><span>пр. Космонавтов, д. 14 (ТРК Радуга) (Метро Парк Победы)</span></label>    
+                                            </div>
+                                        </div>
+                                        <div class="store-drop__item">
+                                            <div class="check"><label>        
+                                                <input type="radio" name="point"><i></i><span>Гражданский пр., д. 117, к.1 (Метро Гражданский проспект)</span></label>    
+                                            </div>
+                                        </div>
+                                        <div class="store-drop__item">
+                                            <div class="check"><label>        
+                                                <input type="radio" name="point" checked=""><i></i><span>Гражданский пр., д. 114, к.1 (Метро Гражданский проспект)</span></label>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="enroll__item">
+                            <div class="tit">Выберите дату и время:</div>
+                            <div class="enroll__full">
+                                <div class="calendar">
+                                    <div class="calendar__head">
+                                        <div class="month">Май 2026</div>
+                                        <div class="prev"></div>
+                                        <div class="next"></div>
+                                    </div>
+                                    <div class="week">
+                                        <div><span>Пн</span></div>
+                                        <div><span>Вт</span></div>
+                                        <div><span>Ср</span></div>
+                                        <div><span>Чт</span></div>
+                                        <div><span>Пт</span></div>
+                                        <div><span>Сб</span></div>
+                                        <div><span>Вс</span></div>
+                                    </div>
+                                    <div class="days">
+                                        <!-- дни будут генерироваться динамически через js -->
+                                    </div>
+                                    <!--<div class="selected-info">
+                                        Выбранная дата: <span id="selectedDateDisplay">19 мая 2026</span>
+                                    </div>-->
+                                </div>
+
+                                <div class="check-time">
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" ><span>10:00</span></label>    
+                                        </div>
+                                    </div>
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" ><span>11:00</span></label>    
+                                        </div>
+                                    </div>
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" checked=""><span>12:00</span></label>    
+                                        </div>
+                                    </div>
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" ><span>13:00</span></label>    
+                                        </div>
+                                    </div>
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" ><span>14:00</span></label>    
+                                        </div>
+                                    </div>
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" ><span>15:00</span></label>    
+                                        </div>
+                                    </div>
+                                    <div class="check-time__item">
+                                        <div class="check"><label>        
+                                            <input type="radio" name="time" ><span>19:00</span></label>    
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--<div class="map-balloon">
+                                    <div class="map-balloon__title">м. Коменданский проспект</div>
+                                    <div class="map-balloon__place">ул. Парашютная, д. 60</div>
+                                    <div class="map-balloon__phone">+7 (905) 217-05-41</div>
+                                    <button class="btn btn-blue map-balloon__btn">выбрать</button>
+                                </div>-->
+                                
+                            </div>
+                        </div>
+                        <div class="enroll__item">
+                            <div class="tit">Укажите ваши контакты:</div>
+                            <div class="enroll__full">
+                                <div class="form-group">
+                                    <input type="text" name="" placeholder="Иванов">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="" placeholder="+7 (952) 123-45-67">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="" placeholder="Email@">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexbot">
+                        <button class="btn btn-blue enroll__open">подобрать очки</button>                        
+                        <div class="enroll__hide">
+                            <button class="btn btn-blue enroll__add">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="agree">Нажимая кнопку «Записаться», я даю свое согласие на обработку всех персональных данных введенных мною в анкету,<br> в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для<br> целей, определенных в <a href="">Согласии на обработку персональных данных.</a></div>
+                    <div class="enroll__bottom">
+                        <h2>Бесплатная проверка зрения в Санкт-Петербурге</h2>
+                        <p>Подбор очков начинается с проверки остроты зрения. Специалист в области оптометрии определяет наличие отклонений от нормы и на основе полученных результатов подбирает Вам линзы. Если Вас интересует проверка зрения, добро пожаловать в салоны «Питер Оптика»! У нас: внимательный и квалифицированный персонал, современное оборудование, комфортная атмосфера. Диагностический сервис совершенно бесплатно предоставляется всем желающим в возрасте от 18 лет по обязательной предварительной записи.</p>
+                        <h2>Зачем нужна проверка зрения?</h2>
+                        <p>Даже здоровые глаза нуждаются в регулярном осмотре. Особенно важно проверить их перед покупкой очков или линз. От этого зависит, насколько комфортно будет вам и вашему зрительному аппарату. Неточная оценка может привести не только к дискомфорту, но и ухудшению зрения, появлению дополнительных проблем. Вот почему врачи настоятельно рекомендуют проверяться перед посещением салона оптики.<br> Если вы делали диагностику некоторое время назад, не будет лишним проверить зрение еще раз. Во-первых, это позволит подтвердить или уточнить результаты предыдущего осмотра. А во-вторых, зрительный аппарат, как и другие системы организма, постоянно меняется. Эти изменения необходимо своевременно фиксировать и предпринимать соответствующие действия. Например, менять линзы в очках на более сильные.</p>
+                        <h2>Где проверить зрение в СПб?</h2>
+                        <p>Не всегда необходимо тратить время и деньги на посещение офтальмолога в клинике. Вам доступна бесплатная диагностика зрения в любом из наших салонов в СПб. Просто выберите ближайший филиал сети и запишитесь на удобное время. У нас работают сотрудники исключительно с большим опытом, а наши медицинские услуги лицензированы в соответствии с действующим законодательством.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        
+    </div>
+  
+ 
+    <!-- FOOTER
+    ================================= -->
+    <div class="footer">
+        <div class="show1200">
+            <div class="logo">
+                <a href="">
+                    <img src="img/footer/logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-contacts-mob show1200">
+            <div class="container">
+                <div class="footer__contacts">
+                    <a href="">8 (800) 600-72-80</a>
+                </div>
+                <div class="footer__contacts">График работы Пн-Вс с 09:00 до 21:00</div>
+            </div>
+        </div>
+        <div class="footer__top">
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <div class="subtitle">Каталог</div>
+                        <div class="footer__full">
+                            <ul class="footer-nav">
+                                <li><a href="">Оправы</a></li>
+                                <li><a href="">Солнцезащитные очки</a></li>
+                                <li><a href="">Линзы для очков</a></li>
+                                <li><a href="">Контактные линзы</a></li>
+                                <li><a href="">Аксессуары</a></li>
+                                <li><a href="">Подарочные карты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border">
+                            <div class="subtitle">Покупателю</div>
+                            <div class="footer__full">
+                                <ul class="footer-nav">
+                                    <li><a href="">Оплата и возврат</a></li>
+                                    <li><a href="">Т-Банк рассрочка</a></li>
+                                    <li><a href="">Яндекс.Сплит</a></li>
+                                    <li><a href="">Оправа к форме лица</a></li>
+                                    <li><a href="">Аксессуары</a></li>
+                                    <li><a href="">Проверка зрения</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border">
+                            <div class="subtitle">Информация</div>
+                            <div class="footer__full">
+                                <ul class="footer-nav">
+                                    <li><a href="">О компании</a></li>
+                                    <li><a href="">Блог</a></li>
+                                    <li><a href="">Вакансии</a></li>
+                                    <li><a href="">Оплата и возврат</a></li>
+                                    <li><a href="">Онлайн примерка очков</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border">
+                            <div class="subtitle">Контакты</div>
+                            <div class="footer__full">
+                                <div class="footer__contacts">
+                                    <a href="">8 (800) 600-72-80</a>
+                                </div>
+                                <div class="footer__contacts">Пн.-Вс. 09:00 до 21:00</div>
+                                <div class="footer__contacts mail">
+                                    <a href="">info@piteroptika.ru</a>
+                                </div>
+                                <div class="soc hidd1200">
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/vk.svg">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/wh.svg">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/tg.svg">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/max.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="logo hidd1200">
+                                    <a href="">
+                                        <img src="img/footer/logo.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="show1200">
+                                <div class="soc soc-mob">
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/vk.svg">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/wh.svg">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/tg.svg">
+                                        </a>
+                                    </div>
+                                    <div class="soc__item">
+                                        <a href="">
+                                            <img src="img/footer/max.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="cols">
+                    <div class="col">
+                        <p class="m-g">
+                            <a href="">Политика конфиденциальности</a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p>© Copyright 2026. ПитерОптика — салоны оптики в Санкт-Петербурге. Все права защищены</p>
+                    </div>
+                    <div class="col">
+                        <p class="m-g">
+                            <a href="">Договор оферты</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--popup-->
+    <div style="display: none;" id="popup-map">
+        <div class="popup">   
+            <div id="map"></div>
+        </div>  
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_КЛЮЧ&lang=ru_RU" onload="initApi()"></script>
+
+    <script src="libs/select2.min.js"></script>
+    <script src="libs/jquery.fancybox.js"></script>
+    <script src="libs/slick.min.js"></script> 
+    <script src="js/common.js"></script>
+ 
+    <script>
+    // ==================== Глобальная функция для кнопки "выбрать" ====================
+    // Будет вызываться из onclick атрибута внутри HTML балуна
+    window.selectPlace = function(placeTitle, address, phone) {
+        // Кастомное действие при клике: алерт с информацией о точке
+        alert(`✅ Вы выбрали:\n📍 ${placeTitle}\n🏠 ${address}\n📞 ${phone}`);
+        // При необходимости можно добавить любую логику: отправка на сервер, переход на другую страницу и т.д.
+        console.log(`Выбрана точка: ${placeTitle}, адрес: ${address}, телефон: ${phone}`);
+    };
+
+    // Функция для генерации кастомной SVG-иконки (пина) с уникальным цветом и буквой/цифрой
+    // Это создаёт полностью кастомный пин, без внешних картинок
+    function createCustomIconSVG(color, label, bgColor = "#ffffff") {
+        // Размер иконки 44x44 (стандартный), но можно масштабировать
+        // Делаем стильную метку в виде капли/круга с тенью и текстом
+        return `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cdefs%3E%3Cfilter id='shadow' x='-20%25' y='-20%25' width='140%25' height='140%25'%3E%3CfeDropShadow dx='1' dy='2' stdDeviation='2' flood-opacity='0.3'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='22' cy='22' r='19' fill='${color}' stroke='${bgColor}' stroke-width='2.5' filter='url(%23shadow)'/%3E%3Ccircle cx='22' cy='22' r='14' fill='${bgColor}' opacity='0.9'/%3E%3Ctext x='22' y='27' font-size='16' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='${color}'%3E${label}%3C/text%3E%3C/svg%3E`;
+    }
+
+    // Данные точек (меток) для Санкт-Петербурга
+    // Координаты взяты приблизительно реальные для станций метро и улиц
+    const places = [
+        {
+            coords: [60.008239, 30.259398],  // м. Комендантский проспект, ул. Парашютная
+            title: "м. Коменданский проспект",
+            address: "ул. Парашютная, д. 60",
+            phone: "+7 (905) 217-05-41",
+            iconColor: "#5691F5",  // синий
+            label: "К"
+        },
+        {
+            coords: [60.016736, 30.315733],  // м. Удельная, Енотаевская
+            title: "м. Удельная",
+            address: "ул. Енотаевская, д. 12",
+            phone: "+7 (812) 123-45-67",
+            iconColor: "#FF6B6B",  // красноватый
+            label: "У"
+        },
+        {
+            coords: [60.002243, 30.296016],  // м. Пионерская, Коломяжский пр.
+            title: "м. Пионерская",
+            address: "Коломяжский пр., д. 28",
+            phone: "+7 (921) 987-65-43",
+            iconColor: "#51CF66",  // зелёный
+            label: "П"
+        },
+        {
+            coords: [60.056344, 30.341138],  // пр. Просвещения
+            title: "м. Проспект Просвещения",
+            address: "пр. Просвещения, д. 42",
+            phone: "+7 (911) 222-33-44",
+            iconColor: "#FFD43B",  // золотистый
+            label: "ПР"
+        },
+        {
+            coords: [59.972089, 30.323243],  // м. Московская (доп. точка для разнообразия)
+            title: "м. Московская",
+            address: "Московский пр., д. 197",
+            phone: "+7 (812) 555-77-88",
+            iconColor: "#BE8C63",  // коричнево-золотой
+            label: "М"
+        }
+    ];
+
+    let myMap;          // переменная карты
+    let placemarks = []; // массив меток для возможного дальнейшего управления
+
+    // Функция инициализации карты
+    function initMap() {
+        // Создание карты с центром в Санкт-Петербурге (координаты центра города)
+        myMap = new ymaps.Map("map", {
+            center: [59.9386, 30.3141],   // центр СПб
+            zoom: 12,
+            controls: ["zoomControl", "fullscreenControl", "typeSelector"]
+        });
+
+        // Добавим маленькую подпись с названием города (опционально)
+        myMap.behaviors.enable(["drag", "scrollZoom"]);
+
+        // Перебираем все точки и создаём кастомные метки с уникальными балунами
+        places.forEach((place, index) => {
+            // 1. Генерация кастомной иконки (пина) с уникальным цветом и буквой
+            const iconUrl = createCustomIconSVG(place.iconColor, place.label);
+            
+            // 2. Создание HTML-контента балуна на основе шаблона с подстановкой данных
+            //    В кнопке используем вызов глобальной функции selectPlace с реальными данными
+            const balloonContent = `
+                <div class="map-balloon">
+                    <div class="map-balloon__title">${escapeHtml(place.title)}</div>
+                    <div class="map-balloon__place">${escapeHtml(place.address)}</div>
+                    <div class="map-balloon__phone">${escapeHtml(place.phone)}</div>
+                    <button class="btn btn-blue map-balloon__btn" 
+                        onclick="selectPlace('${escapeJs(place.title)}', '${escapeJs(place.address)}', '${escapeJs(place.phone)}')">
+                        выбрать
+                    </button>
+                </div>
+            `;
+            
+            // 3. Настройки метки: иконка, содержимое балуна, опции
+            const placemark = new ymaps.Placemark(
+                place.coords,
+                {
+                    // Свойства метки: заголовок (всплывает при ховере) + контент балуна
+                    hintContent: place.title,
+                    balloonContent: balloonContent   // напрямую вставляем кастомный HTML
+                },
+                {
+                    // Кастомная иконка через изображение SVG
+                    iconLayout: 'default#image',
+                    iconImageHref: iconUrl,
+                    iconImageSize: [44, 44],
+                    iconImageOffset: [-22, -42],   // смещение чтобы остриё указывало на координаты
+                    // Отключаем стандартный хинт, если мешает, но можно оставить
+                    hideIconOnBalloonOpen: false,
+                    balloonCloseButton: true,
+                    balloonPanelMaxMapArea: 0,
+                    // Увеличим z-index чтобы балун был поверх
+                    balloonZIndex: 1000
+                }
+            );
+            
+            // Добавляем метку на карту
+            myMap.geoObjects.add(placemark);
+            placemarks.push(placemark);
+        });
+
+        // Небольшой фикс: после инициализации переопределяем стиль балуна, 
+        // чтобы наш контент не сжимался излишне (для старых версий API)
+        // Уже добавили глобальные стили, но дополнительно можно принудительно задать ширину балуна
+        // через onLoad ничего не требуется - CSS справляется.
+        
+        // Дополнительно: если нужно, центрируем карту с учётом всех меток (опционально)
+        // Создаём bounds из координат всех точек
+        const bounds = places.map(p => p.coords);
+        if (bounds.length) {
+            let minLat = Infinity, maxLat = -Infinity, minLon = Infinity, maxLon = -Infinity;
+            bounds.forEach(coord => {
+                minLat = Math.min(minLat, coord[0]);
+                maxLat = Math.max(maxLat, coord[0]);
+                minLon = Math.min(minLon, coord[1]);
+                maxLon = Math.max(maxLon, coord[1]);
+            });
+            // Добавим отступы в границы, чтобы все метки были видны хорошо
+            const centerLat = (minLat + maxLat) / 2;
+            const centerLon = (minLon + maxLon) / 2;
+            // Если расстояние между точками небольшое, оставляем текущий зум
+            if (maxLat - minLat > 0.05 || maxLon - minLon > 0.05) {
+                myMap.setBounds([[minLat, minLon], [maxLat, maxLon]], {
+                    checkZoomRange: true,
+                    zoomMargin: 50
+                });
+            } else {
+                myMap.setCenter([centerLat, centerLon], 13);
+            }
+        }
+    }
+    
+    // Вспомогательные функции для экранирования в HTML и JavaScript (чтобы избежать XSS и ошибок)
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+    
+    function escapeJs(str) {
+        if (!str) return '';
+        // Экранируем кавычки и обратную косую черту для безопасной передачи в onclick
+        return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"');
+    }
+    
+    // Ждем загрузки API Яндекс.Карт
+    // Для корректной работы необходимо подключить API с вашим ключом.
+    // В данном примере ключ placeholder. Замените на свой рабочий ключ.
+    // Если ключа нет, можно получить бесплатно: https://developer.tech.yandex.ru/services/
+    // ВНИМАНИЕ: Для демонстрации используйте свой ключ. Без ключа API может не загрузиться.
+    // Для тестов можно создать ключ с ограничением по HTTP-рефереру.
+    
+    // Скрипт API Яндекса загружается асинхронно. Функция initMap будет вызвана, когда API готов.
+    // Но чтобы убедиться, используем глобальную функцию ymaps.ready.
+    // Обратите внимание: в теге скрипта ниже мы зададим загрузку API с параметром onload=initMap.
+    // Поэтому дублируем: при ручном вызове проверим.
+    
+    // Альтернативный вариант: если скрипт API уже загружен, вызовем initMap, иначе подождём
+    if (typeof ymaps !== 'undefined') {
+        ymaps.ready(initMap);
+    } else {
+        // Скрипт загрузится динамически (см. подключение в конце body)
+        window.initApi = function() {
+            if (typeof ymaps !== 'undefined') {
+                ymaps.ready(initMap);
+            } else {
+                setTimeout(window.initApi, 100);
+            }
+        };
+        window.initApi();
+    }
+</script>
+   
+    
+</body>
+</html>
