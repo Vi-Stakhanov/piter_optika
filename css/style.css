@@ -288,6 +288,47 @@ textarea:focus{
     background: url(../img/icons/refresh.svg) center no-repeat;
 }
 
+.btn-blue-w{
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-blue-w:hover,
+.btn-blue-w:active{
+    opacity: .888;
+}
+
+.btn-blue-w span{
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 3px 50px;
+    background: #5691f5;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-blue-w i{
+
+
+}
+
+.arrow-circle{
+    width: 38px;
+    height: 38px;
+    display: block;
+    flex-shrink: 0;
+    background: #5691f5 url(../img/icons/arrow-right-white.svg) center no-repeat;
+    border-radius: 100%;
+}
+
 button:focus{
     outline: none;
 }
@@ -436,10 +477,15 @@ button:focus{
 
 .p-text{
     margin-bottom: 24px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     color: #0e1829;
+}
+
+.p-text a{
+    color: inherit;
 }
 
 .b-head{
@@ -503,10 +549,11 @@ button:focus{
 }
 
 .header__text{
+    font-family: 'TildaSansRegular';
     padding-left: 32px;
     position: relative;
-    font-weight: 200;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
 }
 
@@ -546,8 +593,9 @@ button:focus{
 }
 
 .header__time{
-    font-weight: 300;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #717680;
 }
 
@@ -760,9 +808,9 @@ button:focus{
     padding-left: 52px;
     padding-right: 15px;
     background: #e9eaeb;
-    font-family: 'Bounded', sans-serif;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     border: none;
 }
 
@@ -1089,6 +1137,41 @@ button:focus{
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
+}
+
+/**STORY**/
+.story{
+
+}
+
+.story .items{
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px;
+}
+
+.story .item{
+    padding: 0 10px;
+}
+
+.story .item .in{
+    width: 145px;
+    cursor: pointer;
+}
+
+.story .item .pic{
+    height: 170px;
+    border: 2px solid #5691f5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.story .item .pic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 /**CONTENT**/
@@ -1586,6 +1669,7 @@ ol li{
 .about .pic img{
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 .about__btn{
@@ -1629,6 +1713,11 @@ ol li{
     padding: 40px 30px;
 }
 
+.devide .item.h-5 .in{
+    height: 275px;
+    padding: 40px 30px;
+}
+
 .devide .item .title{
     margin-bottom: 18px;
     font-weight: 400;
@@ -1647,8 +1736,9 @@ ol li{
     justify-content: center;
     column-gap: 24px;
     margin-bottom: 14px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     text-align: center;
     color: #717680;
@@ -1664,6 +1754,7 @@ ol li{
     align-items: center;
     justify-content: center;
     margin-bottom: 12px;
+    position: relative;
 }
 
 .devide .item.h-3 .pic{
@@ -1678,9 +1769,34 @@ ol li{
     margin-top: 100px;
 }
 
-.devide .item .pic img{
+.devide .item.h-5 .pic{
+    height: 150px;
+}
+
+.devide .item .pic >  img{
     max-width: 100%;
     max-height: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.devide .item .pic__left{
+    position: absolute;
+    top: -35px;
+    left: -20px;
+    z-index: 3;
+}
+
+.devide .item .pic__right{
+    position: absolute;
+    top: 50px;
+    right: -84px;
+    z-index: 3;
+}
+
+.devide .item .pic__left img{
+    width: 105px;
     display: block;
 }
 
@@ -1717,8 +1833,9 @@ ol li{
 
 .services .item .title{
     width: 100%;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
     color: #0e1829;
     position: relative;
@@ -1762,9 +1879,9 @@ ol li{
 }
 
 .action .in{
-    height: 500px;
+    height: 443px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: 40px;
     position: relative;
     z-index: 3;
@@ -1776,7 +1893,7 @@ ol li{
 
 .action .vert{
     width: 100%;
-    max-width: 496px;
+    max-width: 480px;
 }
 
 .action .vert.max-390{
@@ -1798,6 +1915,10 @@ ol li{
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.action .pic.mob{
+    display: none;
 }
 
 .action .pic img{
@@ -3679,6 +3800,112 @@ ol li{
 #map {
     height: 500px;
     width: 100%;
+}
+
+/**OFFERINGS**/
+.offerings{
+
+}
+
+.offerings .items.ones{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.offerings .item{
+    margin-bottom: 20px;
+}
+
+.offerings .item.one{
+    padding: 0 10px;
+}
+
+.offerings .item .in{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.offerings .item.one .in{
+    align-items: flex-end;
+}
+
+.offerings .item.reverse .in{
+    flex-direction: row-reverse;
+}
+
+.offerings .item .col{
+    width: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+.offerings .item.one .col{
+    width: 100%;
+}
+
+.offerings .item .right{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.offerings .item .pic{
+    height: 100%;
+}
+
+.offerings .item.one .pic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.offerings .item .pic img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.offerings .item.reverse .pic img{
+    border-radius: 0 10px 10px 0;
+}
+
+.offerings .item.one .pic img{
+    border-radius: 10px;
+}
+
+.offerings .item .vert{
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+    z-index: 3;
+}
+
+.offerings__btn{
+    margin-top: 24px;
+}
+
+.offerings .item .img{
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    z-index: 1;
+}
+
+.offerings .item .img img{
+    width: 267px;
+    display: block;
+}
+
+.offerings .item .title-block.sm{
+    font-size: 20px;
 }
 
 /**FOOTER**/
