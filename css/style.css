@@ -61,9 +61,9 @@ body {
 .label{
     display: block;
     margin-bottom: 5px;
-    font-family: 'Bounded', sans-serif;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.2;
     color: #0e1829;
 }
@@ -95,8 +95,9 @@ body {
 
 .agree{
     padding-top: 20px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.3;
     text-align: center;
     color: #0e1829;
@@ -114,8 +115,9 @@ input[type='search']{
     height: 30px;
     padding: 0;
     color: #0e1829;
-    font-family: 'Bounded', sans-serif;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #717680;
@@ -326,6 +328,16 @@ textarea:focus{
     display: block;
     flex-shrink: 0;
     background: #5691f5 url(../img/icons/arrow-right-white.svg) center no-repeat;
+    border-radius: 100%;
+}
+
+.cart-circle{
+    width: 38px;
+    height: 38px;
+    display: block;
+    flex-shrink: 0;
+    background: #5691f5 url(../img/products/cart.svg) center no-repeat;
+    background-size: 22px;
     border-radius: 100%;
 }
 
@@ -714,8 +726,9 @@ button:focus{
     align-items: center;
     justify-content: space-between;
     padding: 3px 10px 3px;
-    font-weight: 200;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
     line-height: 1.2;
     color: #0e1829;
 }
@@ -724,10 +737,11 @@ button:focus{
     min-height: 38px;
     display: flex;
     align-items: center;
-    padding: 3px 10px 3px;
-    font-weight: 200;
-    font-size: 12px;
+    padding: 3px 10px 3px 0;
+    font-weight: 400;
+    font-size: 10px;
     color: #0e1829;
+    text-transform: uppercase;
     transition: .3s;
 }
 
@@ -769,6 +783,7 @@ button:focus{
 
 .nav__drop ul ul{
     display: none;
+    padding-left: 20px;
     position: absolute;
     top: 0;
     left: 100%;
@@ -1207,8 +1222,9 @@ button:focus{
 
 .content p{
     margin-bottom: 24px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
 }
 
@@ -1222,8 +1238,9 @@ button:focus{
 }
 
 .list li{
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
 }
 
@@ -1233,8 +1250,9 @@ ol{
 }
 
 ol li{
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
 }
 
@@ -1340,6 +1358,8 @@ ol li{
 
 .blog .item .in{
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .blog .item .pic{
@@ -1403,8 +1423,8 @@ ol li{
 .blog .item .title{
     margin-bottom: 0!important;
     width: 100%;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 24px;
     line-height: 1.3;
     color: #fff;
     position: relative;
@@ -1421,6 +1441,12 @@ ol li{
     padding-bottom: 4px;
     font-weight: 400;
     font-size: 16px;
+}
+
+.blog .item .title span:last-of-type{
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .blog .item .title a{
@@ -1446,6 +1472,8 @@ ol li{
     height: 260px;
     flex-shrink: 0;
     position: relative;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .paper__top .pic:before{
@@ -1480,7 +1508,9 @@ ol li{
 .paper .title span{
     display: block;
     padding-bottom: 4px;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
 }
 
 .paper .title a{
@@ -1569,8 +1599,9 @@ ol li{
 
 .table table tr td{
     padding: 16px 10px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     text-align: center;
     color: #0e1829;
     border: 1px solid #e9eaeb;
@@ -2020,9 +2051,10 @@ ol li{
 }
 
 .cat .item .title{
-    font-weight: 200;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
     color: #0e1829;
+    text-transform: uppercase;
 }
 
 .cat .item .title a{
@@ -2067,8 +2099,9 @@ ol li{
 }
 
 .panel__sum{
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -2295,8 +2328,9 @@ ol li{
 
 .products .item .subtitle{
     margin-bottom: 8px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
 }   
 
@@ -2306,8 +2340,9 @@ ol li{
 
 .products .item .title{
     margin-bottom: 12px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -2316,14 +2351,14 @@ ol li{
 }
 
 .products__price{
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
 .products__price .old-price{
-    font-weight: 200;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: line-through;
     color: #717680;
 }
@@ -2392,8 +2427,9 @@ ol li{
 
 .card .sub{
     margin-bottom: 12px;
-    font-weight: 300;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
 }
 
@@ -2428,8 +2464,9 @@ ol li{
 
 .card .price .old-price{
     margin-left: 8px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: line-through;
     color: #717680;
 }
@@ -2486,8 +2523,9 @@ ol li{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -2642,8 +2680,9 @@ ol li{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -2676,8 +2715,9 @@ ol li{
 .card-des__item{
     display: flex;
     margin-bottom: 8px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -2760,12 +2800,20 @@ ol li{
 
 .cart__sub{
     margin-bottom: 28px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
+    color: #0e1829;
+}
+
+.cart-top .price{
     font-weight: 400;
     font-size: 24px;
     color: #0e1829;
 }
 
-.cart .price .old-price{
+.cart-top .price .old-price{
+    font-family: 'TildaSansRegular';
     font-weight: 400;
     font-size: 16px;
     text-decoration: line-through;
@@ -2956,8 +3004,9 @@ ol li{
 
 .cart__order .sub{
     margin-bottom: 24px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #717680;
 }
 
@@ -3035,9 +3084,9 @@ ol li{
     align-items: center;
     padding: 20px 12px;
     border: 1px solid #717680;
-    font-family: 'Bounded', sans-serif;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -3110,8 +3159,9 @@ ol li{
 
 .decorated .text{
     margin-bottom: 24px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     color: #000;
 }
@@ -3156,8 +3206,9 @@ ol li{
 .or{
     margin-top: 24px;
     margin-bottom: 24px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     text-align: center;
     color: #717680;
     overflow: hidden;
@@ -3276,7 +3327,9 @@ ol li{
 .personal-chisel .title span{
     display: block;
     padding-top: 6px;
-    font-size: 16px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 18px;
     color: #717680;
 }
 
@@ -3319,8 +3372,9 @@ ol li{
 
 .personal .item ul li{
     margin-bottom: 12px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -3355,8 +3409,9 @@ ol li{
 }
 
 .personal-goods__title{
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -3389,8 +3444,9 @@ ol li{
 }
 
 .enroll__text{
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #0e1829;
     line-height: 1.5;
 }
@@ -3399,7 +3455,7 @@ ol li{
     display: block;
     font-weight: 400;
     color: #0e1829;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .enroll__item{
@@ -3427,8 +3483,9 @@ ol li{
     display: flex;
     align-items: center;
     font-family: 'Bounded', sans-serif;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     color: #0e1829;
 }
 
@@ -3483,16 +3540,18 @@ ol li{
     height: 40px;
     padding-left: 52px;
     padding-right: 15px;
-    background: #e9eaeb;
-    font-family: 'Bounded', sans-serif;
-    font-weight: 200;
-    font-size: 12px;
-    border: none;
+    background: #fff;
+    border: 1px solid #e9eaeb;
+
 }
 
 .store-search__btn{
     min-height: 42px;
     padding: 3px 18px;
+    border-radius: 100px;
+    margin-left: -20px;
+    position: relative;
+    z-index: 3;
 }
 
 .i-map{
@@ -3537,12 +3596,14 @@ ol li{
     align-items: center;
     justify-content: center;
     padding: 3px 24px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
     text-align: center;
     color: #0e1829;
     border: 1px solid #5691f5;
+    border-radius: 10px;
     white-space: nowrap;
     transition: .3s;
 }
@@ -3655,8 +3716,9 @@ ol li{
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1;
     color: #0e1829;
     border-radius: 100%;
@@ -3953,8 +4015,9 @@ ol li{
 
 .footer .subtitle{
     margin-bottom: 24px;
+    font-family: 'TildaSansRegular';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     pointer-events: none;
 }
@@ -3965,8 +4028,9 @@ ol li{
 
 .footer-nav li{
     margin-bottom: 12px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.2;
     color: #fff;
 }
@@ -3982,8 +4046,9 @@ ol li{
 
 .footer__contacts{
     margin-bottom: 7px;
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -4047,8 +4112,9 @@ ol li{
 }
 
 .footer__bottom p{
-    font-weight: 200;
-    font-size: 12px;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 14px;
     color: #fff;
 }
 

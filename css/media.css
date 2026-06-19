@@ -97,7 +97,7 @@
     }
 
     .footer__bottom p{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .footer .subtitle{
@@ -106,7 +106,7 @@
         padding-right: 45px;
         display: flex;
         align-items: center;
-        font-size: 10px;
+        font-size: 14px;
         position: relative;
         pointer-events: auto;
         position: relative;
@@ -183,6 +183,10 @@
     	margin-top: 35px;
     }
 
+    .footer-contacts-mob .footer__contacts{
+        font-size: 18px;
+    }
+
 }/**1200px**/
 
 @media only screen and (max-width : 1199px){
@@ -191,9 +195,15 @@
 		font-size: 18px;
 	}
 
+    .action .title-block{
+        margin-bottom: 10px;
+    }
+
+
+
 	.p-text{
 		margin-bottom: 20px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.flexbot .btn{
@@ -394,7 +404,7 @@
 	}
 
 	.services .item .title{
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.action__col{
@@ -505,7 +515,7 @@
 
     .content p{
     	margin-bottom: 12px;
-    	font-size: 10px;
+    	font-size: 12px;
     }
 
     .list{
@@ -513,7 +523,7 @@
     }
 
     .list li{
-    	font-size: 10px;
+    	font-size: 14px;
     }
 
     .table table tr td{
@@ -555,6 +565,10 @@
         width: 50%;
     }
 
+    .blog .item .in{
+        border-radius: 4px;
+    }
+
     .blog .item .pic{
         height: 300px;
     }
@@ -565,6 +579,10 @@
 
     .blog .item .title span{
         font-size: 10px;
+    }
+
+    .blog .item .title span:last-of-type{
+        font-size: 14px;
     }
 
     .blog .item .overlay{
@@ -713,7 +731,7 @@
 
 	.card-ad__item{
 		margin-bottom: 12px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.card__bottom{
@@ -732,7 +750,7 @@
 
 	.card-param__item{
 		margin-bottom: 18px;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.card-param__item .icon{
@@ -748,7 +766,7 @@
 	}
 
 	.card-des__item{
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.cart-top{
@@ -771,7 +789,7 @@
 
     .cart__sub{
     	margin-bottom: 4px;
-    	font-size: 10px;
+    	font-size: 12px;
     }
 
     .cart__title{
@@ -785,7 +803,7 @@
     }
 
     .cart .price .old-price{
-    	font-size: 12px;
+    	font-size: 14px;
     }
 
     .btn-del{
@@ -845,7 +863,7 @@
 
     .cart__order .sub{
     	margin-bottom: 12px;
-    	font-size: 12px;
+    	font-size: 14px;
     }
 
     .avt__items{
@@ -858,7 +876,7 @@
     }
 
     .order__check label span span{
-    	font-size: 10px;
+    	font-size: 12px;
     }
 
     .order__check .pic_1 img{
@@ -910,6 +928,7 @@
     }
 
     .decorated .text{
+        margin-bottom: 10px;
     	font-size: 12px;
     }
 
@@ -947,7 +966,7 @@
     }
 
     .personal-chisel .title span{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .personal-chisel{
@@ -966,7 +985,7 @@
 
     .personal .item ul li{
         margin-bottom: 6px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .personal-goods .pic{
@@ -975,7 +994,7 @@
     }
 
     .personal-goods__title{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .edit .col.w25{
@@ -1148,6 +1167,10 @@
         font-size: 14px;
     }
 
+    ol li{
+        font-size: 12px;
+    }
+
 }/**1199px**/
 
 @media only screen and (max-width : 992px){
@@ -1225,6 +1248,10 @@
 
     .offerings .item .right{
         padding: 12px 0 0;
+    }
+
+    .personal .item .btn{
+        width: 100%;
     }
 
 }/**767px**/
