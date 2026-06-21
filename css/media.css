@@ -167,12 +167,29 @@
     }
 
     .back-mob{
-    	display: block;
+    	/*display: block;*/
+    }
+
+    .breadcrumbs{
+        overflow: auto;
+    }
+
+    .breadcrumbs ul{
+        flex-wrap: nowrap;
+    }
+
+    .breadcrumbs ul li a{
+        white-space: nowrap;
     }
 
     .content__section{
     	padding-top: 24px;
     	padding-bottom: 24px;
+    }
+
+    .content__top{
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .content{
@@ -185,6 +202,128 @@
 
     .footer-contacts-mob .footer__contacts{
         font-size: 18px;
+    }
+
+    .filter__in{
+        width: 100%;
+        max-width: 320px;
+        padding: 20px 10px;
+    }
+
+    .filter__title{
+        font-size: 14px;
+    }
+
+    .filter__item{
+        margin-bottom: 24px;
+    }
+
+    .select-wrap{
+        width: 22px;
+        position: relative;
+    }
+
+    
+
+    .select2-container--open .select2-dropdown{
+        width: 160px!important;
+        left: auto;
+        right: -20px;
+    }
+
+    .select2-container{
+        
+
+    }
+
+    .select-pos{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .add{
+        width: 214px;
+        padding: 12px;
+        top: 55px;
+        right: 10px;
+        transform: none;
+    }
+
+    .add .pic{
+        width: 66px;
+        height: 44px;
+    }
+
+    .add .right{
+        padding-left: 10px;
+    }
+
+    .comp{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .add .title{
+        font-size: 10px;
+    }
+
+    .cat .item .right{
+        padding-left: 10px;
+    }
+
+    .salon-sort{
+        overflow: auto;
+        margin-right: -10px;
+    }
+
+    .salon-sort__item{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .salons .items{
+        margin: 0 -10px;
+    }
+
+    .salons .item{
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .salons-map{
+        height: 500px;
+        border-radius: 0;
+    }
+
+    .card__toggle{
+        margin-bottom: 12px;
+        padding-right: 35px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fafafa;
+        position: relative;
+        pointer-events: auto;
+    }
+
+    .card__toggle:before{
+        content: "";
+        width: 22px;
+        height: 22px;
+        background: url(../img/icons/plus.svg) center no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .card__toggle.active:before{
+        background-image: url(../img/icons/minus.svg);
+    }
+
+    .card__full{
+        display: none;
     }
 
 }/**1200px**/
@@ -467,7 +606,7 @@
     }
 
     .cat .item .title{
-    	font-size: 10px;
+    	font-size: 8px;
     }
 
     .page-head .in{
@@ -515,7 +654,7 @@
 
     .content p{
     	margin-bottom: 12px;
-    	font-size: 12px;
+    	font-size: 14px;
     }
 
     .list{
@@ -1033,6 +1172,7 @@
     .store-search__btn{
         width: 100%;
         margin-top: 10px;
+        margin-left: 0;
     }
 
     .store-drop{
@@ -1168,7 +1308,95 @@
     }
 
     ol li{
-        font-size: 12px;
+        font-size: 14px;
+    }
+
+    .category .items{
+        margin: 0 -5px;
+    }
+
+    .category .item{
+        width: 33.33%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .serv .items{
+        margin: 0 -5px;
+    }
+
+    .serv .item{
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .serv .item .img img{
+        width: 50px;
+    }
+
+    .serv .item .img{
+        right: -5px;
+    }
+
+    .vacancy .item{
+        margin-bottom: 12px;
+    }
+
+    .vacancy .item .in{
+        padding: 20px;
+    }
+
+    .vacancy .item .title{
+        font-size: 14px;
+    }
+
+    .vacancy .item .go span{
+        display: none;
+    }
+
+    .salons .item{
+        width: 33.33%;
+    }
+
+    .salons .item .title{
+        font-size: 14px;
+    }
+
+    .salon__title{
+        font-size: 18px;
+    }
+
+    .salon-slider .card-slider__right .pic{
+        height: 300px;
+    }
+
+    .salon-slider .card-slider__right,
+    .salon-slider .card-slider__left .pic img,
+    .salon-chisel{
+        border-radius: 4px;
+    }
+
+    .salon-chisel{
+        min-height: 0;
+        padding: 20px 10px;
+    }
+
+    .salon__m{
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .salon__text{
+        font-size: 14px;
+    }
+
+    .salon-chisel .col{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .salon-chisel .cols{
+        padding-top: 10px;
     }
 
 }/**1199px**/
@@ -1178,7 +1406,9 @@
 }/**992px**/
 
 @media only screen and (max-width : 991px){
-	
+	.salons .item{
+        width: 50%;
+    }
 }/**991px**/
 
 @media only screen and (max-width : 768px){
@@ -1254,6 +1484,18 @@
         width: 100%;
     }
 
+    .category .item{
+        width: 50%;
+    }
+
+    .serv .item{
+        width: 50%;
+    }
+
+    .serv .item .in{
+        height: 220px;
+    }
+
 }/**767px**/
 
 @media only screen and (max-width : 576px){
@@ -1261,7 +1503,9 @@
 }/**576px**/
 
 @media only screen and (max-width : 575px){
-	
+	.salons .item{
+        width: 100%;
+    }
 }/**575px**/
 
 @media only screen and (max-width : 480px){
