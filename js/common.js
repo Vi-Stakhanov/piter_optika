@@ -26,6 +26,11 @@ $(document).ready(function() {
         $(this).next('.footer__full').toggle();
     });
 
+    $('.card__toggle').click(function(){
+        $(this).toggleClass('active');
+        $(this).next('.card__full').toggle();
+    });
+
     $('.nav-mob .open-1').on('click', function() {
       event.preventDefault();
       $('.nav-mob__level-1').hide();
@@ -52,12 +57,6 @@ $(document).ready(function() {
         $('.nav-mob__level-3').hide();
     });
 
-    $('.btn-filter, .filter-close').click(function(){
-        $(this).toggleClass('active');
-        $('.filter').toggleClass('active');
-        $('.header').toggleClass('hide');
-    });
-
     $('.btn-cart-add').click(function(){
         $(this).toggleClass('active');
     });
@@ -75,6 +74,77 @@ $(document).ready(function() {
         $('.enroll__full').slideToggle();
         $(this).hide();
         $('.enroll__hide').fadeIn();
+    });
+
+    $('.btn-filter, #filter-close_1').click(function(){
+        //$(this).toggleClass('active');
+        $('#filter-1').toggleClass('active');
+        $('body, html').toggleClass('no-scroll');
+    });
+
+    $('#soting-toggle_1, #filter-close_2').click(function(){
+        //$(this).toggleClass('active');
+        $('#filter-2').toggleClass('active');
+        $('body, html').toggleClass('no-scroll');
+    });
+
+    $('#soting-toggle_2, #filter-close_3').click(function(){
+        //$(this).toggleClass('active');
+        $('#filter-3').toggleClass('active');
+        $('body, html').toggleClass('no-scroll');
+    });
+
+    $('#soting-toggle_3, #filter-close_4').click(function(){
+        //$(this).toggleClass('active');
+        $('#filter-4').toggleClass('active');
+        $('body, html').toggleClass('no-scroll');
+    });
+
+    $('#soting-toggle_4, #filter-close_5').click(function(){
+        //$(this).toggleClass('active');
+        $('#filter-5').toggleClass('active');
+        $('body, html').toggleClass('no-scroll');
+    });
+
+    $('#soting-toggle_5, #filter-close_6').click(function(){
+        //$(this).toggleClass('active');
+        $('#filter-6').toggleClass('active');
+        $('body, html').toggleClass('no-scroll');
+    });
+
+    // Находим поле ввода внутри блока .search
+    var $input = $('.search input');
+    var $searchBlock = $('.search'); // или $input.closest('.search')
+
+    // Событие input срабатывает при каждом изменении содержимого поля
+    $input.on('input', function() {
+        var value = $(this).val().trim(); // убираем пробелы по краям
+
+        if (value.length > 0) {
+            // Если в поле есть символы – добавляем класс active
+            $searchBlock.addClass('active');
+        } else {
+            // Если поле пустое – удаляем класс active
+            $searchBlock.removeClass('active');
+        }
+    });
+
+    // Дополнительно: если поле теряет фокус и пустое – убираем active,
+    // чтобы при клике вне поля оно закрывалось (по желанию)
+    $input.on('blur', function() {
+        var value = $(this).val().trim();
+        if (value.length === 0) {
+            $searchBlock.removeClass('active');
+        }
+    });
+
+    // Если пользователь кликает на поле, но там уже есть текст – active уже должен быть,
+    // но на случай, если он был убран ранее, можно проверить при фокусе
+    $input.on('focus', function() {
+        var value = $(this).val().trim();
+        if (value.length > 0) {
+            $searchBlock.addClass('active');
+        }
     });
 
 	$('.intro-slider-1').slick({
