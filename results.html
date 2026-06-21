@@ -109,26 +109,26 @@
                                                         <li><a href="">Посмотреть все товары</a></li>
                                                         <li><a href="">По брендам <i></i></a></li>
                                                         <li class="subtitle">Формы оправ:</li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_1.svg"></span>Авиаторы</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_2.svg"></span>Большие</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_3.svg"></span>Броулайнеры</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_4.svg"></span>Вэйферер</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_5.svg"></span>Квадратные</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_6.svg"></span>Клипоны</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_7.svg"></span>Кошачий глаз</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_8.svg"></span>Круглые</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_9.svg"></span>Овальные</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_10.svg"></span>Прямоугольные</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_11.svg"></span>Спортивные</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_12.svg"></span>Узкие</a></li>
+                                                        <li><a href=""><span class="icon icon_1"></span>Авиаторы</a></li>
+                                                        <li><a href=""><span class="icon icon_2"></span>Большие</a></li>
+                                                        <li><a href=""><span class="icon icon_3"></span>Броулайнеры</a></li>
+                                                        <li><a href=""><span class="icon icon_4"></span>Вэйферер</a></li>
+                                                        <li><a href=""><span class="icon icon_5"></span>Квадратные</a></li>
+                                                        <li><a href=""><span class="icon icon_6"></span>Клипоны</a></li>
+                                                        <li><a href=""><span class="icon icon_7"></span>Кошачий глаз</a></li>
+                                                        <li><a href=""><span class="icon icon_8"></span>Круглые</a></li>
+                                                        <li><a href=""><span class="icon icon_9"></span>Овальные</a></li>
+                                                        <li><a href=""><span class="icon icon_10"></span>Прямоугольные</a></li>
+                                                        <li><a href=""><span class="icon icon_11"></span>Спортивные</a></li>
+                                                        <li><a href=""><span class="icon icon_12"></span>Узкие</a></li>
                                                         <li class="subtitle">типы оправ:</li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_13.svg"></span>Ободковые</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_14.svg"></span>Безободковые</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_15.svg"></span>полуободковые</a></li>
+                                                        <li><a href=""><span class="icon icon_13"></span>Ободковые</a></li>
+                                                        <li><a href=""><span class="icon icon_14"></span>Безободковые</a></li>
+                                                        <li><a href=""><span class="icon icon_15"></span>полуободковые</a></li>
                                                         <li class="subtitle">Пол:</li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_16.svg"></span>Мужские</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_17.svg"></span>Женские</a></li>
-                                                        <li><a href=""><span class="icon"><img src="img/menu/i_18.svg"></span>Детские</a></li>
+                                                        <li><a href=""><span class="icon icon_16"></span>Мужские</a></li>
+                                                        <li><a href=""><span class="icon icon_17"></span>Женские</a></li>
+                                                        <li><a href=""><span class="icon icon_18"></span>Детские</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="">Линзы для очков</a></li>
@@ -252,7 +252,7 @@
         <div class="back-mob">
             <a href=""><i></i> главная</a>
         </div>
-        <div class="content__top hidd1200">
+        <div class="content__top">
             <div class="container">
                 <div class="breadcrumbs">
                     <ul>
@@ -276,9 +276,16 @@
                                 <div class="panel__sum">1520 товаров</div>
                             </div>
                             <div class="col">
-                                <div class="view">
-                                    <div class="view__item">
-                                        <a href=""><i class="i-tile"></i></a>
+                                <div class="select-wrap flex">
+                                    <i class="i-filter-2"></i>
+                                    <div class="select-pos">
+                                        <select class="select_1" data-placeholder="" style="width: 100%;" >
+                                            <option>по популярности</option>
+                                            <option>по новизне</option>
+                                            <option>сначала дешевле</option>
+                                            <option>сначала дороже</option>
+                                            <option>по величине скидки</option>                                        
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -288,55 +295,28 @@
                 <div class="sorting-wrap">
                     <div class="sorting">
                         <div class="sorting__item">
-                            <div class="select-wrap">
-                                <select class="select_1" data-placeholder="тип оправы" style="width: 100%;" >
-                                    <option></option>
-                                    <option>Пункт 1</option>
-                                    <option>Пункт 2</option>
-                                    <option>Пункт 3</option>
-                                    <option>Пункт 4</option>
-                                    <option>Пункт 5</option>
-                                    <option>Пункт 6</option>
-                                </select>
+                            <div class="sorting-wrap">
+                                <div class="soting-toggle" id="soting-toggle_1">тип оправы</div>
                             </div>
                         </div>
                         <div class="sorting__item">
-                            <div class="select-wrap">
-                                <select class="select_2" data-placeholder="пол" style="width: 100%;" >
-                                    <option></option>
-                                    <option>Пункт 1</option>
-                                    <option>Пункт 2</option>
-                                    <option>Пункт 3</option>
-                                    <option>Пункт 4</option>
-                                    <option>Пункт 5</option>
-                                    <option>Пункт 6</option>
-                                </select>
+                            <div class="sorting-wrap">
+                                <div class="soting-toggle" id="soting-toggle_2">пол</div>
                             </div>
                         </div>
                         <div class="sorting__item">
-                            <div class="select-wrap">
-                                <select class="select_3" data-placeholder="бренд" style="width: 100%;" >
-                                    <option></option>
-                                    <option>Пункт 1</option>
-                                    <option>Пункт 2</option>
-                                    <option>Пункт 3</option>
-                                    <option>Пункт 4</option>
-                                    <option>Пункт 5</option>
-                                    <option>Пункт 6</option>
-                                </select>
+                            <div class="sorting-wrap">
+                                <div class="soting-toggle" id="soting-toggle_3">Цена</div>
                             </div>
                         </div>
                         <div class="sorting__item">
-                            <div class="select-wrap">
-                                <select class="select_4" data-placeholder="материал" style="width: 100%;" >
-                                    <option></option>
-                                    <option>Пункт 1</option>
-                                    <option>Пункт 2</option>
-                                    <option>Пункт 3</option>
-                                    <option>Пункт 4</option>
-                                    <option>Пункт 5</option>
-                                    <option>Пункт 6</option>
-                                </select>
+                            <div class="sorting-wrap">
+                                <div class="soting-toggle" id="soting-toggle_4">бренд</div>
+                            </div>
+                        </div>
+                        <div class="sorting__item">
+                            <div class="sorting-wrap">
+                                <div class="soting-toggle" id="soting-toggle_5">материал</div>
                             </div>
                         </div>
                     </div>
@@ -634,8 +614,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flexbot">
-                    <a href="" class="btn btn-blue intro__btn"><i class="arrow-right-white"></i> Ещё оправы</a>
+                <div class="flexbot">                    
+                    <a href="" class="btn btn-blue-w"><span>Ещё оправы</span> <i class="arrow-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -795,15 +775,236 @@
         </div>
     </div>
     
+    <div class="filter" id="filter-1">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">фильтры</div>
+                <div class="filter-close" id="filter-close_1"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Тип оправы</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Авиаторы</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Квадратные</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Кошки</span></label>          
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Пол</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="2"><i></i><span>Женские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="2" checked=""><i></i><span>Мужские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="2"><i></i><span>Детские</span></label>          
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Цена</div>                
+                <div class="minmax">
+                    <div class="minmax__item">
+                        <input type="text" id="minCost1" value="1000"/><span>₽</span>
+                    </div>
+                    <div class="minmax__item">
+                        <input type="text" id="maxCost1" value="1000000"/><span>₽</span>
+                    </div>
+                </div> 
+                <div class="runner">
+                    <div id="range1"></div> 
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Бренд</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="3"><i></i><span>Prada</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="3" checked=""><i></i><span>CARRERA</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="3"><i></i><span>Burberry</span></label>          
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Материал</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Золото</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Карбон</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Металл</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Пластик</span></label>          
+                </div>
+            </div>
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-2">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Тип оправы</div>
+                <div class="filter-close" id="filter-close_2"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Авиаторы</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Квадратные</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Кошки</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-3">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Пол</div>
+                <div class="filter-close" id="filter-close_3"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Женские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Мужские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Детские</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-4">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Цена</div>
+                <div class="filter-close" id="filter-close_4"></div>            
+            </div>
+            <div class="filter__item">          
+                <div class="minmax">
+                    <div class="minmax__item">
+                        <input type="text" id="minCost2" value="1000"/><span>₽</span>
+                    </div>
+                    <div class="minmax__item">
+                        <input type="text" id="maxCost2" value="1000000"/><span>₽</span>
+                    </div>
+                </div> 
+                <div class="runner">
+                    <div id="range2"></div> 
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-5">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Бренд</div>
+                <div class="filter-close" id="filter-close_5"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Prada</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>CARRERA</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Burberry</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-6">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Материал</div>
+                <div class="filter-close" id="filter-close_6"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Золото</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Карбон</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Металл</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Пластик</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
     
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="libs/select2.min.js"></script>
+    <script src="libs/jquery-ui.min.js"></script>
     <script src="libs/jquery.fancybox.js"></script>
     <script src="libs/slick.min.js"></script> 
     <script src="js/common.js"></script>
  
-
+    <script>
+    $("#range1").slider({
+        min: 1000,
+        max: 1000000,
+        values: [1000,1000000],
+        range: true,
+        stop: function(event, ui) {
+            $("input#minCost1").val($("#range1").slider("values",0));
+            $("input#maxCost1").val($("#range1").slider("values",1));
+        },
+        slide: function(event, ui){
+            $("input#minCost1").val($("#range1").slider("values",0));
+            $("input#maxCost1").val($("#range1").slider("values",1));
+        }
+    });
+    
+    $("#range2").slider({
+        min: 1000,
+        max: 1000000,
+        values: [1000,1000000],
+        range: true,
+        stop: function(event, ui) {
+            $("input#minCost2").val($("#range2").slider("values",0));
+            $("input#maxCost2").val($("#range2").slider("values",1));
+        },
+        slide: function(event, ui){
+            $("input#minCost2").val($("#range2").slider("values",0));
+            $("input#maxCost2").val($("#range2").slider("values",1));
+        }
+    });
+    
+    </script>
    
     
 </body>

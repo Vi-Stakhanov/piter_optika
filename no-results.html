@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>decorated</title>
+	<title>no-results</title>
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -96,7 +96,7 @@
         <div class="header__middle hidd1200">
             <div class="container">
                 <div class="cols">
-                    <div class="col">
+                    <!--<div class="col">
                         <div class="nav">
                             <ul>
                                 <li><a href="">каталог <i></i></a>
@@ -147,11 +147,11 @@
                                 <li><a href="">блог</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="search">
+                    </div>-->
+                    <div class="col grow-1">
+                        <div class="search search_inner">
                             <form>
-                                <input type="text" name="" placeholder="поиск 50 000+ моделей">
+                                <input class="border" type="text" name="" value="Оправы" placeholder="">
                                 <button class="btn btn-lup"></button>
                             </form>
                         </div>
@@ -169,25 +169,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="header__bottom hidd1200">
-            <div class="container">
-                <div class="nav nav-2 white">
-                    <ul>
-                        <li><a href="">ОПРАВЫ</a></li>
-                        <li><a href="">Солнцезащитные очки</a></li>
-                        <li><a href="">
-                            <img src="img/header/brand_1.svg" alt="">
-                        </a></li>
-                        <li><a href="">
-                            <img src="img/header/brand_2.svg" alt="">
-                        </a></li>
-                        <li><a href="">контактные линзы</a></li>
-                        <li><a href="">аксессуары</a></li>
-                        <li><a href="">Sale</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -257,31 +238,33 @@
                 </div>
             </div>
         </div>
+        <div class="search search-mob">
+            <form>
+                <input type="text" name="" placeholder="поиск 50 000+ моделей">
+                <button class="btn btn-lup"></button>
+            </form>
+        </div>
     </div>
 
     <!-- CONTENT
     ================================= -->
-    <div class="content">            
-        <div class="content__section">
+    <div class="content">
+        <div class="back-mob">
+            <a href=""><i></i> главная</a>
+        </div>
+        <div class="content__top">
             <div class="container">
-                <div class="decorated">
-                    <div class="title">Заказ № 281550<br> успешно оформлен!</div>
-                    <p class="sub">Менеджер позвонит вам в ближайшее время, чтобы подтвердить детали</p>
-                    <p class="text">Подробную информацию и статус заказа вы можете увидеть на странице:</p>
-                    <p class="text">
-                        <a href="">Мои заказы</a>
-                    </p>
-                </div>
-                
-
                 
             </div>
         </div>
-        
-        
-        
+        <div class="content__section overflow-hidden">
+            <div class="container">
+                <div class="no-results">По вашему поисковому<br> запросу ничего не найдено ;(</div>
+            </div>
+        </div>
     </div>
   
+    
  
     <!-- FOOTER
     ================================= -->
@@ -435,15 +418,236 @@
         </div>
     </div>
     
+    <div class="filter" id="filter-1">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">фильтры</div>
+                <div class="filter-close" id="filter-close_1"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Тип оправы</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Авиаторы</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Квадратные</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Кошки</span></label>          
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Пол</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="2"><i></i><span>Женские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="2" checked=""><i></i><span>Мужские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="2"><i></i><span>Детские</span></label>          
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Цена</div>                
+                <div class="minmax">
+                    <div class="minmax__item">
+                        <input type="text" id="minCost1" value="1000"/><span>₽</span>
+                    </div>
+                    <div class="minmax__item">
+                        <input type="text" id="maxCost1" value="1000000"/><span>₽</span>
+                    </div>
+                </div> 
+                <div class="runner">
+                    <div id="range1"></div> 
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Бренд</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="3"><i></i><span>Prada</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="3" checked=""><i></i><span>CARRERA</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="3"><i></i><span>Burberry</span></label>          
+                </div>
+            </div>
+            <div class="filter__item">
+                <div class="filter__subtitle">Материал</div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Золото</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Карбон</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Металл</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Пластик</span></label>          
+                </div>
+            </div>
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-2">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Тип оправы</div>
+                <div class="filter-close" id="filter-close_2"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Авиаторы</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Квадратные</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Кошки</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-3">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Пол</div>
+                <div class="filter-close" id="filter-close_3"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Женские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Мужские</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Детские</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-4">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Цена</div>
+                <div class="filter-close" id="filter-close_4"></div>            
+            </div>
+            <div class="filter__item">          
+                <div class="minmax">
+                    <div class="minmax__item">
+                        <input type="text" id="minCost2" value="1000"/><span>₽</span>
+                    </div>
+                    <div class="minmax__item">
+                        <input type="text" id="maxCost2" value="1000000"/><span>₽</span>
+                    </div>
+                </div> 
+                <div class="runner">
+                    <div id="range2"></div> 
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-5">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Бренд</div>
+                <div class="filter-close" id="filter-close_5"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Prada</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>CARRERA</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Burberry</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
+
+    <div class="filter" id="filter-6">
+        <div class="filter__in">
+            <div class="filter__top">
+                <div class="filter__title">Материал</div>
+                <div class="filter-close" id="filter-close_6"></div>            
+            </div>
+            <div class="filter__item">
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Золото</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1" checked=""><i></i><span>Карбон</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Металл</span></label>          
+                </div>
+                <div class="check"><label>        
+                    <input type="checkbox" name="1"><i></i><span>Пластик</span></label>          
+                </div>
+            </div>
+            
+            <button class="btn btn-blue-w w100"><span>показать 1 039 товаров</span></button>
+        </div>
+    </div>
     
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="libs/select2.min.js"></script>
+    <script src="libs/jquery-ui.min.js"></script>
     <script src="libs/jquery.fancybox.js"></script>
     <script src="libs/slick.min.js"></script> 
     <script src="js/common.js"></script>
  
-
+    <script>
+    $("#range1").slider({
+        min: 1000,
+        max: 1000000,
+        values: [1000,1000000],
+        range: true,
+        stop: function(event, ui) {
+            $("input#minCost1").val($("#range1").slider("values",0));
+            $("input#maxCost1").val($("#range1").slider("values",1));
+        },
+        slide: function(event, ui){
+            $("input#minCost1").val($("#range1").slider("values",0));
+            $("input#maxCost1").val($("#range1").slider("values",1));
+        }
+    });
+    
+    $("#range2").slider({
+        min: 1000,
+        max: 1000000,
+        values: [1000,1000000],
+        range: true,
+        stop: function(event, ui) {
+            $("input#minCost2").val($("#range2").slider("values",0));
+            $("input#maxCost2").val($("#range2").slider("values",1));
+        },
+        slide: function(event, ui){
+            $("input#minCost2").val($("#range2").slider("values",0));
+            $("input#maxCost2").val($("#range2").slider("values",1));
+        }
+    });
+    
+    </script>
    
     
 </body>
