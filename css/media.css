@@ -1399,6 +1399,34 @@
         padding-top: 10px;
     }
 
+    .cookie{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .cookie .in{
+        display: block;
+    }
+
+    .cookie p{
+        margin-right: 0;
+        margin-bottom: 20px;
+        color: #717680;
+        font-size: 16px;
+    }
+
+    .cookie p span{
+        display: block;
+        margin-bottom: 5px;
+        font-family: 'Bounded', sans-serif;
+        font-size: 14px;
+        color: #0e1829;
+    }
+
+    .cookie .btn{
+        width: 100%;
+    }
+
 }/**1199px**/
 
 @media only screen and (max-width : 992px){

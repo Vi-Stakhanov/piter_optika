@@ -5222,3 +5222,32 @@ ol li{
 .show1200{
     display: none!important;
 }
+
+.cookie{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.cookie .in{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookie p{
+    max-width: 835px;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'TildaSansRegular';
+    color: #0e1829;
+}
+
+.cookie .btn{
+    
+}
