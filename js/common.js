@@ -140,6 +140,10 @@ $(document).ready(function() {
         }
     });
 
+    $('.cookie__btn').click(function(){
+        $('.cookie').hide();
+    });
+
 	$('.intro-slider-1').slick({
         autoplay: false,
         arrows: false, 
