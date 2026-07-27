@@ -5248,6 +5248,11 @@ ol li{
     color: #0e1829;
 }
 
+.cookie p a{
+    color: #5691f5;
+    text-decoration: underline;
+}
+
 .cookie .btn{
-    
+
 }
