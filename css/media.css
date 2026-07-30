@@ -1427,6 +1427,14 @@
         width: 100%;
     }
 
+    .eror-404__title{
+        font-size: 20px;
+    }
+
+    .eror-404__text{
+        font-size: 16px;
+    }
+
 }/**1199px**/
 
 @media only screen and (max-width : 992px){

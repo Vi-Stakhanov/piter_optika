@@ -5256,3 +5256,32 @@ ol li{
 .cookie .btn{
 
 }
+
+.eror-404{
+
+}
+
+.eror-404__title{
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.1;
+    text-align: center;
+    color: #0e1829;
+    text-transform: uppercase;
+}
+
+.eror-404__text{
+    max-width: 604px;
+    margin: 0 auto;
+    font-family: 'TildaSansRegular';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #717680;
+}
+
+.eror-404__btn{
+    width: 100%;
+    max-width: 214px;
+}
